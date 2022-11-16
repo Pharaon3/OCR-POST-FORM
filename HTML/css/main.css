@@ -1,0 +1,85 @@
+body {
+  background-color: #dfdfdf;
+  font: 16px 'Open Sans', Arial, Arimo, Helvetica, sans-serif;
+  margin: 0 auto;
+  position: relative;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+p {
+    font-size: 16px;
+    margin: 5px;
+}
+input {
+  height: 22px;
+}
+.myform {
+  margin: 40px;
+  width: 600px;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 2px 2px 1px 0px rgba(114, 114, 114, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.header {
+  text-align: center;
+  font-size: 26px;
+  font-family: math;
+  box-shadow: 0px 2px 0px 0px rgba(151, 151, 151, 0.5);
+  /* height: 30px; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+form {
+  margin-top: 37px;
+}
+input{
+  width: 500px;
+  border-color:rgba(81, 95, 80, 0.5);
+  border-radius: 4px;
+  height: 30px;
+}
+select{
+  width: 400px;
+  border-color:rgba(81, 95, 80, 0.5);
+  border-radius: 4px;
+  height: 30px !important;
+  font-size: 16px;
+}
+.subAnswer{
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.inputForm{
+  margin:30px;
+}
+.submitButton{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    /* padding: 5px; */
+    height: 40px;
+    cursor: pointer;
+}
+.upload{
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 4px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+}

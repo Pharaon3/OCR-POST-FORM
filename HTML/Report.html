@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+</head>
+<body>
+  <div class="myform">
+    <div class="header">
+      New SIM Card Application
+    </div>
+    <form method="POST" action ="http://localhost/report/">
+      <div class = "inputForm" id="fullName">
+        <p> Full Name <span style="color: red;">*</span></p>
+        <input type="text" name = 'fullName' required>
+      </div>
+      <div class = "inputForm" id="passportNumber">
+        <p> Passport Number <span style="color: red;">*</span></p>
+        <input type="text" name = 'passportNumber' required>
+      </div>
+      <div class = "inputForm" id="passportFrontPage">
+        <p> Passport Front Page <span style="color: red;">*</span></p>
+        <div class="upload">
+          <img src = "./media/camera.svg">
+          <p style="color: red;"> Upload photo </p>
+        </div>
+      </div>
+      <div class = "inputForm" id="Nationality">
+        <p> Nationality <span style="color: red;">*</span></p>
+        <input type="text" name = 'Nationality' required>
+      </div>
+      <div class = "inputForm" id="Dateofbirth">
+        <p> Date of birth <span style="color: red;">*</span></p>
+        <input type="Date" name = 'Date of birth' required>
+      </div>
+      <div class = "inputForm" id="Email">
+        <p> Email <span style="color: red;">*</span></p>
+        <input type="text" name = 'Email' required>
+      </div>
+      <div class = "inputForm" id="CapturedIMEI">
+        <p> Captured IMEI <span style="color: red;">*</span></p>
+        <div class="upload">
+          <img src = "./media/camera.svg">
+          <p style="color: red;"> Upload photo </p>
+        </div>
+      </div>
+      <div class = "inputForm" id="EMEI1">
+        <p> EMEI1 <span style="color: red;">*</span></p>
+        <input type="text" name = 'EMEI1' required>
+      </div>
+      <div class = "inputForm" id="EMEI2">
+        <p> EMEI2 <span style="color: red;">*</span></p>
+        <input type="text" name = 'EMEI2' required>
+      </div>
+      <div class = "inputForm" id="Payment">
+        <p> Payment Channel <span style="color: red;">*</span></p>
+        <div style=" display: flex; align-items: center; ">
+          <input type="radio" name="PaymentChannel" style="width: 20px;" required=""><span style="margin-left: 5px;">Cash on Telkomsel Booth / Store</span>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <input type="submit" class="submitButton" >
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

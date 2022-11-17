@@ -1,10 +1,22 @@
 # import sys
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+
 import time 
 from selenium.webdriver.common.action_chains import ActionChains
-chromedriver_location = "/Users/Downloads/chromedrive"
-driver = webdriver.Chrome(chromedriver_location)
+chromedriver_location = "/content/OCR-POST-FORM/chromedrive"
+# driver = webdriver.Chrome(chromedriver_location)
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+options = Options()
+options.add_argument("start-maximized")
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
+
+
 driver.get('https://www.telkomsel.com/shops/preorder-wna/form?utm_source=wec&utm_medium=web&utm_campaign=prabayar-tourist')
 
 continueButton = '//*[@id="mat-dialog-0"]/app-wnaregistration-popup/div/div/div[4]/div/button'

@@ -24,6 +24,7 @@ EMEI2Path = '/html/body/app-root/div/app-wna-registration/div/div[2]/div/form/di
 capturedIMEIChooseButtonPath = '/html/body/app-root/div/app-wna-registration/div/div[2]/div/form/div[3]/div[5]/shared-file-input/div[2]/input[2]'
 dateOfBirthDivPath = '/html/body/app-root/div/app-wna-registration/div/div[2]/div/form/div[3]/div[3]/shared-date-picker/div[2]'
 datePickerPath = '//*[@id="mat-datepicker-0"]/div/mat-month-view/table/tbody/tr/td'
+datePickerClass = 'mat-calendar-body-cell ng-star-inserted'
 
 # fullNameValue = sys.argv[1]
 # passportValue = sys.argv[2]
@@ -31,8 +32,8 @@ fullNameValue = 'abc'
 passportValue = 'abcd123486'
 nationalityValue = 'Afghanistan'
 emailValue = 'email@mail.com'
-EMEI1Value = '1230987654321'
-EMEI2Value = '1230987654321'
+EMEI1Value = '123098765432112345'
+EMEI2Value = '123098765432112345'
 
 driver.find_element("xpath", continueButton).click()
 driver.find_element("xpath", fullNamePath).send_keys(fullNameValue)
@@ -51,7 +52,8 @@ actions.send_keys(Keys.ENTER)
 actions.perform()
 driver.find_element("xpath", capturedIMEIChooseButtonPath).send_keys("C:/Users/Pharaon/Pictures/passport/EMEI1.jpg")
 driver.find_element("xpath", dateOfBirthDivPath).click()
-m = driver.find_element("xpath", datePickerPath)
+# m = driver.find_element("xpath", datePickerPath)
+m = driver.find_element("class name", datePickerClass)
 for i in m:
 #verify required date then click
    if i.text == '3':
